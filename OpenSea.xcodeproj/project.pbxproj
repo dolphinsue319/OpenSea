@@ -16,6 +16,8 @@
 		82D74B982975309E0023C20C /* OpenSeaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74B972975309E0023C20C /* OpenSeaTests.swift */; };
 		82D74BB22975362B0023C20C /* KDAssetsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74BB12975362B0023C20C /* KDAssetsList.swift */; };
 		82D74BB32975362B0023C20C /* KDAssetsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74BB12975362B0023C20C /* KDAssetsList.swift */; };
+		82D74BB629753E2D0023C20C /* KDAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74BB529753E2D0023C20C /* KDAPIProtocol.swift */; };
+		82D74BB929753E910023C20C /* KDAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74BB829753E910023C20C /* KDAPIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		82D74B932975309E0023C20C /* OpenSeaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenSeaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D74B972975309E0023C20C /* OpenSeaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSeaTests.swift; sourceTree = "<group>"; };
 		82D74BB12975362B0023C20C /* KDAssetsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAssetsList.swift; sourceTree = "<group>"; };
+		82D74BB529753E2D0023C20C /* KDAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAPIProtocol.swift; sourceTree = "<group>"; };
+		82D74BB829753E910023C20C /* KDAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAPIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 		82D74B7F2975309D0023C20C /* OpenSea */ = {
 			isa = PBXGroup;
 			children = (
+				82D74BB529753E2D0023C20C /* KDAPIProtocol.swift */,
+				82D74BB829753E910023C20C /* KDAPIManager.swift */,
 				82D74BB0297535FC0023C20C /* DataModels */,
 				82D74B802975309D0023C20C /* AppDelegate.swift */,
 				82D74B822975309D0023C20C /* SceneDelegate.swift */,
@@ -199,6 +205,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82D74BB629753E2D0023C20C /* KDAPIProtocol.swift in Sources */,
+				82D74BB929753E910023C20C /* KDAPIManager.swift in Sources */,
 				82D74B852975309D0023C20C /* ViewController.swift in Sources */,
 				82D74B812975309D0023C20C /* AppDelegate.swift in Sources */,
 				82D74B832975309D0023C20C /* SceneDelegate.swift in Sources */,
