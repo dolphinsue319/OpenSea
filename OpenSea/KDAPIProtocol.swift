@@ -8,5 +8,5 @@
 import Foundation
 
 protocol KDAPIProtocol {
-    func fetchAssets(at offset: UInt) async -> (KDAssetsContainer?, Error?)
+    func fetchAssets(at offset: UInt) async -> (KDAssetsContainer?, KDError?)
 }
