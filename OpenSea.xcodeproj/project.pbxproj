@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82D74B812975309D0023C20C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74B802975309D0023C20C /* AppDelegate.swift */; };
+		82D74B832975309D0023C20C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74B822975309D0023C20C /* SceneDelegate.swift */; };
+		82D74B852975309D0023C20C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74B842975309D0023C20C /* ViewController.swift */; };
+		82D74B882975309D0023C20C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82D74B862975309D0023C20C /* Main.storyboard */; };
+		82D74B8A2975309E0023C20C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D74B892975309E0023C20C /* Assets.xcassets */; };
+		82D74B8D2975309E0023C20C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82D74B8B2975309E0023C20C /* LaunchScreen.storyboard */; };
+		82D74B982975309E0023C20C /* OpenSeaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74B972975309E0023C20C /* OpenSeaTests.swift */; };
+		82D74BA22975309E0023C20C /* OpenSeaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74BA12975309E0023C20C /* OpenSeaUITests.swift */; };
+		82D74BA42975309E0023C20C /* OpenSeaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74BA32975309E0023C20C /* OpenSeaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82D74B942975309E0023C20C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82D74B752975309D0023C20C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82D74B7C2975309D0023C20C;
+			remoteInfo = OpenSea;
+		};
+		82D74B9E2975309E0023C20C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82D74B752975309D0023C20C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82D74B7C2975309D0023C20C;
+			remoteInfo = OpenSea;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		82D74B7D2975309D0023C20C /* OpenSea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSea.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82D74B802975309D0023C20C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		82D74B822975309D0023C20C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		82D74B842975309D0023C20C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		82D74B872975309D0023C20C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		82D74B892975309E0023C20C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82D74B8C2975309E0023C20C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82D74B8E2975309E0023C20C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82D74B932975309E0023C20C /* OpenSeaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenSeaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82D74B972975309E0023C20C /* OpenSeaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSeaTests.swift; sourceTree = "<group>"; };
+		82D74B9D2975309E0023C20C /* OpenSeaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenSeaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82D74BA12975309E0023C20C /* OpenSeaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSeaUITests.swift; sourceTree = "<group>"; };
+		82D74BA32975309E0023C20C /* OpenSeaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSeaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82D74B7A2975309D0023C20C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82D74B902975309E0023C20C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82D74B9A2975309E0023C20C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82D74B742975309D0023C20C = {
+			isa = PBXGroup;
+			children = (
+				82D74B7F2975309D0023C20C /* OpenSea */,
+				82D74B962975309E0023C20C /* OpenSeaTests */,
+				82D74BA02975309E0023C20C /* OpenSeaUITests */,
+				82D74B7E2975309D0023C20C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82D74B7E2975309D0023C20C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82D74B7D2975309D0023C20C /* OpenSea.app */,
+				82D74B932975309E0023C20C /* OpenSeaTests.xctest */,
+				82D74B9D2975309E0023C20C /* OpenSeaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82D74B7F2975309D0023C20C /* OpenSea */ = {
+			isa = PBXGroup;
+			children = (
+				82D74B802975309D0023C20C /* AppDelegate.swift */,
+				82D74B822975309D0023C20C /* SceneDelegate.swift */,
+				82D74B842975309D0023C20C /* ViewController.swift */,
+				82D74B862975309D0023C20C /* Main.storyboard */,
+				82D74B892975309E0023C20C /* Assets.xcassets */,
+				82D74B8B2975309E0023C20C /* LaunchScreen.storyboard */,
+				82D74B8E2975309E0023C20C /* Info.plist */,
+			);
+			path = OpenSea;
+			sourceTree = "<group>";
+		};
+		82D74B962975309E0023C20C /* OpenSeaTests */ = {
+			isa = PBXGroup;
+			children = (
+				82D74B972975309E0023C20C /* OpenSeaTests.swift */,
+			);
+			path = OpenSeaTests;
+			sourceTree = "<group>";
+		};
+		82D74BA02975309E0023C20C /* OpenSeaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				82D74BA12975309E0023C20C /* OpenSeaUITests.swift */,
+				82D74BA32975309E0023C20C /* OpenSeaUITestsLaunchTests.swift */,
+			);
+			path = OpenSeaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82D74B7C2975309D0023C20C /* OpenSea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82D74BA72975309E0023C20C /* Build configuration list for PBXNativeTarget "OpenSea" */;
+			buildPhases = (
+				82D74B792975309D0023C20C /* Sources */,
+				82D74B7A2975309D0023C20C /* Frameworks */,
+				82D74B7B2975309D0023C20C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenSea;
+			productName = OpenSea;
+			productReference = 82D74B7D2975309D0023C20C /* OpenSea.app */;
+			productType = "com.apple.product-type.application";
+		};
+		82D74B922975309E0023C20C /* OpenSeaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82D74BAA2975309E0023C20C /* Build configuration list for PBXNativeTarget "OpenSeaTests" */;
+			buildPhases = (
+				82D74B8F2975309E0023C20C /* Sources */,
+				82D74B902975309E0023C20C /* Frameworks */,
+				82D74B912975309E0023C20C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82D74B952975309E0023C20C /* PBXTargetDependency */,
+			);
+			name = OpenSeaTests;
+			productName = OpenSeaTests;
+			productReference = 82D74B932975309E0023C20C /* OpenSeaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		82D74B9C2975309E0023C20C /* OpenSeaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82D74BAD2975309E0023C20C /* Build configuration list for PBXNativeTarget "OpenSeaUITests" */;
+			buildPhases = (
+				82D74B992975309E0023C20C /* Sources */,
+				82D74B9A2975309E0023C20C /* Frameworks */,
+				82D74B9B2975309E0023C20C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82D74B9F2975309E0023C20C /* PBXTargetDependency */,
+			);
+			name = OpenSeaUITests;
+			productName = OpenSeaUITests;
+			productReference = 82D74B9D2975309E0023C20C /* OpenSeaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82D74B752975309D0023C20C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					82D74B7C2975309D0023C20C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					82D74B922975309E0023C20C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 82D74B7C2975309D0023C20C;
+					};
+					82D74B9C2975309E0023C20C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 82D74B7C2975309D0023C20C;
+					};
+				};
+			};
+			buildConfigurationList = 82D74B782975309D0023C20C /* Build configuration list for PBXProject "OpenSea" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82D74B742975309D0023C20C;
+			productRefGroup = 82D74B7E2975309D0023C20C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82D74B7C2975309D0023C20C /* OpenSea */,
+				82D74B922975309E0023C20C /* OpenSeaTests */,
+				82D74B9C2975309E0023C20C /* OpenSeaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82D74B7B2975309D0023C20C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82D74B8D2975309E0023C20C /* LaunchScreen.storyboard in Resources */,
+				82D74B8A2975309E0023C20C /* Assets.xcassets in Resources */,
+				82D74B882975309D0023C20C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82D74B912975309E0023C20C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82D74B9B2975309E0023C20C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82D74B792975309D0023C20C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82D74B852975309D0023C20C /* ViewController.swift in Sources */,
+				82D74B812975309D0023C20C /* AppDelegate.swift in Sources */,
+				82D74B832975309D0023C20C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82D74B8F2975309E0023C20C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82D74B982975309E0023C20C /* OpenSeaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82D74B992975309E0023C20C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82D74BA42975309E0023C20C /* OpenSeaUITestsLaunchTests.swift in Sources */,
+				82D74BA22975309E0023C20C /* OpenSeaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82D74B952975309E0023C20C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82D74B7C2975309D0023C20C /* OpenSea */;
+			targetProxy = 82D74B942975309E0023C20C /* PBXContainerItemProxy */;
+		};
+		82D74B9F2975309E0023C20C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82D74B7C2975309D0023C20C /* OpenSea */;
+			targetProxy = 82D74B9E2975309E0023C20C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		82D74B862975309D0023C20C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82D74B872975309D0023C20C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		82D74B8B2975309E0023C20C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82D74B8C2975309E0023C20C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82D74BA52975309E0023C20C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82D74BA62975309E0023C20C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82D74BA82975309E0023C20C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpenSea/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = idv.opensea.kedia.OpenSea;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82D74BA92975309E0023C20C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpenSea/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = idv.opensea.kedia.OpenSea;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		82D74BAB2975309E0023C20C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = idv.opensea.kedia.OpenSeaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenSea.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenSea";
+			};
+			name = Debug;
+		};
+		82D74BAC2975309E0023C20C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = idv.opensea.kedia.OpenSeaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenSea.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenSea";
+			};
+			name = Release;
+		};
+		82D74BAE2975309E0023C20C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = idv.opensea.kedia.OpenSeaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenSea;
+			};
+			name = Debug;
+		};
+		82D74BAF2975309E0023C20C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = idv.opensea.kedia.OpenSeaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenSea;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82D74B782975309D0023C20C /* Build configuration list for PBXProject "OpenSea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82D74BA52975309E0023C20C /* Debug */,
+				82D74BA62975309E0023C20C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82D74BA72975309E0023C20C /* Build configuration list for PBXNativeTarget "OpenSea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82D74BA82975309E0023C20C /* Debug */,
+				82D74BA92975309E0023C20C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82D74BAA2975309E0023C20C /* Build configuration list for PBXNativeTarget "OpenSeaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82D74BAB2975309E0023C20C /* Debug */,
+				82D74BAC2975309E0023C20C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82D74BAD2975309E0023C20C /* Build configuration list for PBXNativeTarget "OpenSeaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82D74BAE2975309E0023C20C /* Debug */,
+				82D74BAF2975309E0023C20C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82D74B752975309D0023C20C /* Project object */;
+}
