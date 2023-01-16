@@ -16,7 +16,6 @@
 		82D74B982975309E0023C20C /* OpenSeaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74B972975309E0023C20C /* OpenSeaTests.swift */; };
 		82D74BB22975362B0023C20C /* KDAssetsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74BB12975362B0023C20C /* KDAssetsList.swift */; };
 		82D74BB32975362B0023C20C /* KDAssetsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74BB12975362B0023C20C /* KDAssetsList.swift */; };
-		82D74BB429753A080023C20C /* OpenSeaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74BA12975309E0023C20C /* OpenSeaUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +29,6 @@
 		82D74B8E2975309E0023C20C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82D74B932975309E0023C20C /* OpenSeaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenSeaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D74B972975309E0023C20C /* OpenSeaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSeaTests.swift; sourceTree = "<group>"; };
-		82D74BA12975309E0023C20C /* OpenSeaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSeaUITests.swift; sourceTree = "<group>"; };
-		82D74BA32975309E0023C20C /* OpenSeaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSeaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		82D74BB12975362B0023C20C /* KDAssetsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAssetsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +55,6 @@
 			children = (
 				82D74B7F2975309D0023C20C /* OpenSea */,
 				82D74B962975309E0023C20C /* OpenSeaTests */,
-				82D74BA02975309E0023C20C /* OpenSeaUITests */,
 				82D74B7E2975309D0023C20C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,15 +89,6 @@
 				82D74B972975309E0023C20C /* OpenSeaTests.swift */,
 			);
 			path = OpenSeaTests;
-			sourceTree = "<group>";
-		};
-		82D74BA02975309E0023C20C /* OpenSeaUITests */ = {
-			isa = PBXGroup;
-			children = (
-				82D74BA12975309E0023C20C /* OpenSeaUITests.swift */,
-				82D74BA32975309E0023C20C /* OpenSeaUITestsLaunchTests.swift */,
-			);
-			path = OpenSeaUITests;
 			sourceTree = "<group>";
 		};
 		82D74BB0297535FC0023C20C /* DataModels */ = {
@@ -225,7 +212,6 @@
 			files = (
 				82D74B982975309E0023C20C /* OpenSeaTests.swift in Sources */,
 				82D74BB32975362B0023C20C /* KDAssetsList.swift in Sources */,
-				82D74BB429753A080023C20C /* OpenSeaUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
