@@ -14,26 +14,10 @@
 		82D74B8A2975309E0023C20C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D74B892975309E0023C20C /* Assets.xcassets */; };
 		82D74B8D2975309E0023C20C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82D74B8B2975309E0023C20C /* LaunchScreen.storyboard */; };
 		82D74B982975309E0023C20C /* OpenSeaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74B972975309E0023C20C /* OpenSeaTests.swift */; };
-		82D74BA22975309E0023C20C /* OpenSeaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74BA12975309E0023C20C /* OpenSeaUITests.swift */; };
-		82D74BA42975309E0023C20C /* OpenSeaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74BA32975309E0023C20C /* OpenSeaUITestsLaunchTests.swift */; };
+		82D74BB22975362B0023C20C /* KDAssetsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74BB12975362B0023C20C /* KDAssetsList.swift */; };
+		82D74BB32975362B0023C20C /* KDAssetsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74BB12975362B0023C20C /* KDAssetsList.swift */; };
+		82D74BB429753A080023C20C /* OpenSeaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74BA12975309E0023C20C /* OpenSeaUITests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		82D74B942975309E0023C20C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 82D74B752975309D0023C20C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 82D74B7C2975309D0023C20C;
-			remoteInfo = OpenSea;
-		};
-		82D74B9E2975309E0023C20C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 82D74B752975309D0023C20C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 82D74B7C2975309D0023C20C;
-			remoteInfo = OpenSea;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		82D74B7D2975309D0023C20C /* OpenSea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSea.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,9 +30,9 @@
 		82D74B8E2975309E0023C20C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82D74B932975309E0023C20C /* OpenSeaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenSeaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D74B972975309E0023C20C /* OpenSeaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSeaTests.swift; sourceTree = "<group>"; };
-		82D74B9D2975309E0023C20C /* OpenSeaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenSeaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D74BA12975309E0023C20C /* OpenSeaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSeaUITests.swift; sourceTree = "<group>"; };
 		82D74BA32975309E0023C20C /* OpenSeaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSeaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		82D74BB12975362B0023C20C /* KDAssetsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAssetsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +44,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		82D74B902975309E0023C20C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		82D74B9A2975309E0023C20C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -91,7 +68,6 @@
 			children = (
 				82D74B7D2975309D0023C20C /* OpenSea.app */,
 				82D74B932975309E0023C20C /* OpenSeaTests.xctest */,
-				82D74B9D2975309E0023C20C /* OpenSeaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +75,7 @@
 		82D74B7F2975309D0023C20C /* OpenSea */ = {
 			isa = PBXGroup;
 			children = (
+				82D74BB0297535FC0023C20C /* DataModels */,
 				82D74B802975309D0023C20C /* AppDelegate.swift */,
 				82D74B822975309D0023C20C /* SceneDelegate.swift */,
 				82D74B842975309D0023C20C /* ViewController.swift */,
@@ -125,6 +102,14 @@
 				82D74BA32975309E0023C20C /* OpenSeaUITestsLaunchTests.swift */,
 			);
 			path = OpenSeaUITests;
+			sourceTree = "<group>";
+		};
+		82D74BB0297535FC0023C20C /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				82D74BB12975362B0023C20C /* KDAssetsList.swift */,
+			);
+			path = DataModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,30 +143,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				82D74B952975309E0023C20C /* PBXTargetDependency */,
 			);
 			name = OpenSeaTests;
 			productName = OpenSeaTests;
 			productReference = 82D74B932975309E0023C20C /* OpenSeaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		82D74B9C2975309E0023C20C /* OpenSeaUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 82D74BAD2975309E0023C20C /* Build configuration list for PBXNativeTarget "OpenSeaUITests" */;
-			buildPhases = (
-				82D74B992975309E0023C20C /* Sources */,
-				82D74B9A2975309E0023C20C /* Frameworks */,
-				82D74B9B2975309E0023C20C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				82D74B9F2975309E0023C20C /* PBXTargetDependency */,
-			);
-			name = OpenSeaUITests;
-			productName = OpenSeaUITests;
-			productReference = 82D74B9D2975309E0023C20C /* OpenSeaUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -197,10 +163,6 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					82D74B922975309E0023C20C = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 82D74B7C2975309D0023C20C;
-					};
-					82D74B9C2975309E0023C20C = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 82D74B7C2975309D0023C20C;
 					};
@@ -221,7 +183,6 @@
 			targets = (
 				82D74B7C2975309D0023C20C /* OpenSea */,
 				82D74B922975309E0023C20C /* OpenSeaTests */,
-				82D74B9C2975309E0023C20C /* OpenSeaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,13 +205,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82D74B9B2975309E0023C20C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -261,6 +215,7 @@
 				82D74B852975309D0023C20C /* ViewController.swift in Sources */,
 				82D74B812975309D0023C20C /* AppDelegate.swift in Sources */,
 				82D74B832975309D0023C20C /* SceneDelegate.swift in Sources */,
+				82D74BB22975362B0023C20C /* KDAssetsList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,32 +224,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				82D74B982975309E0023C20C /* OpenSeaTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		82D74B992975309E0023C20C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				82D74BA42975309E0023C20C /* OpenSeaUITestsLaunchTests.swift in Sources */,
-				82D74BA22975309E0023C20C /* OpenSeaUITests.swift in Sources */,
+				82D74BB32975362B0023C20C /* KDAssetsList.swift in Sources */,
+				82D74BB429753A080023C20C /* OpenSeaUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		82D74B952975309E0023C20C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 82D74B7C2975309D0023C20C /* OpenSea */;
-			targetProxy = 82D74B942975309E0023C20C /* PBXContainerItemProxy */;
-		};
-		82D74B9F2975309E0023C20C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 82D74B7C2975309D0023C20C /* OpenSea */;
-			targetProxy = 82D74B9E2975309E0023C20C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		82D74B862975309D0023C20C /* Main.storyboard */ = {
@@ -366,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +355,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -451,9 +386,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = idv.opensea.kedia.OpenSea;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -478,9 +416,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = idv.opensea.kedia.OpenSea;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -496,9 +437,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = idv.opensea.kedia.OpenSeaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenSea.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenSea";
 			};
 			name = Debug;
@@ -515,44 +459,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = idv.opensea.kedia.OpenSeaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenSea.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenSea";
-			};
-			name = Release;
-		};
-		82D74BAE2975309E0023C20C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = idv.opensea.kedia.OpenSeaUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = OpenSea;
-			};
-			name = Debug;
-		};
-		82D74BAF2975309E0023C20C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = idv.opensea.kedia.OpenSeaUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = OpenSea;
 			};
 			name = Release;
 		};
@@ -582,15 +495,6 @@
 			buildConfigurations = (
 				82D74BAB2975309E0023C20C /* Debug */,
 				82D74BAC2975309E0023C20C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		82D74BAD2975309E0023C20C /* Build configuration list for PBXNativeTarget "OpenSeaUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				82D74BAE2975309E0023C20C /* Debug */,
-				82D74BAF2975309E0023C20C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
