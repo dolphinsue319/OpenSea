@@ -16,6 +16,9 @@ class KDAppCoordinator: Coordinator {
         self.navigationController = navCon
     }
     func start() {
+        goToAssetListPage()
+    }
+    func goToAssetListPage() {
         
     }
 }
