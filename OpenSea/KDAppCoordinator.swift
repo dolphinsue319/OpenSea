@@ -16,9 +16,11 @@ class KDAppCoordinator: Coordinator {
         self.navigationController = navCon
     }
     func start() {
-        goToAssetListPage()
+        goToAssetsPage()
     }
-    func goToAssetListPage() {
-        
+    func goToAssetsPage() {
+        let vm = KDAssetsTableViewControllerViewModel(appCoordinator: self)
+        let vc = KDAssetsTableViewController(viewModel: vm)
+        navigationController.pushViewController(vc, animated: true)
     }
 }
