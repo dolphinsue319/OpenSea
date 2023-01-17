@@ -12,6 +12,8 @@
 		826BB0A7297655CC0090FDF3 /* KDAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0A6297655CC0090FDF3 /* KDAppCoordinator.swift */; };
 		826BB0A929766F860090FDF3 /* KDAssetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0A829766F860090FDF3 /* KDAssetsTableViewController.swift */; };
 		826BB0AB29766F930090FDF3 /* KDAssetsTableViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0AA29766F930090FDF3 /* KDAssetsTableViewControllerViewModel.swift */; };
+		826BB0AD2976D3A60090FDF3 /* KDAssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0AC2976D3A60090FDF3 /* KDAssetCell.swift */; };
+		826BB0B02976D63A0090FDF3 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 826BB0AF2976D63A0090FDF3 /* SDWebImage */; };
 		82D74B812975309D0023C20C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74B802975309D0023C20C /* AppDelegate.swift */; };
 		82D74B832975309D0023C20C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74B822975309D0023C20C /* SceneDelegate.swift */; };
 		82D74B8A2975309E0023C20C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D74B892975309E0023C20C /* Assets.xcassets */; };
@@ -31,6 +33,7 @@
 		826BB0A6297655CC0090FDF3 /* KDAppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAppCoordinator.swift; sourceTree = "<group>"; };
 		826BB0A829766F860090FDF3 /* KDAssetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAssetsTableViewController.swift; sourceTree = "<group>"; };
 		826BB0AA29766F930090FDF3 /* KDAssetsTableViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAssetsTableViewControllerViewModel.swift; sourceTree = "<group>"; };
+		826BB0AC2976D3A60090FDF3 /* KDAssetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAssetCell.swift; sourceTree = "<group>"; };
 		82D74B7D2975309D0023C20C /* OpenSea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D74B802975309D0023C20C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82D74B822975309D0023C20C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826BB0B02976D63A0090FDF3 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +104,7 @@
 				82D74BB0297535FC0023C20C /* DataModels */,
 				82D74B802975309D0023C20C /* AppDelegate.swift */,
 				826BB0A829766F860090FDF3 /* KDAssetsTableViewController.swift */,
+				826BB0AC2976D3A60090FDF3 /* KDAssetCell.swift */,
 				826BB0AA29766F930090FDF3 /* KDAssetsTableViewControllerViewModel.swift */,
 				82D74B822975309D0023C20C /* SceneDelegate.swift */,
 				82D74B892975309E0023C20C /* Assets.xcassets */,
@@ -141,6 +146,9 @@
 			dependencies = (
 			);
 			name = OpenSea;
+			packageProductDependencies = (
+				826BB0AF2976D63A0090FDF3 /* SDWebImage */,
+			);
 			productName = OpenSea;
 			productReference = 82D74B7D2975309D0023C20C /* OpenSea.app */;
 			productType = "com.apple.product-type.application";
@@ -190,6 +198,9 @@
 				Base,
 			);
 			mainGroup = 82D74B742975309D0023C20C;
+			packageReferences = (
+				826BB0AE2976D63A0090FDF3 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 82D74B7E2975309D0023C20C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -224,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826BB0AD2976D3A60090FDF3 /* KDAssetCell.swift in Sources */,
 				82D74BB629753E2D0023C20C /* KDAPIProtocol.swift in Sources */,
 				82D74BBB29754DCB0023C20C /* KDError.swift in Sources */,
 				826BB0A3297655790090FDF3 /* CoordinatorProtocol.swift in Sources */,
@@ -510,6 +522,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		826BB0AE2976D63A0090FDF3 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.9.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		826BB0AF2976D63A0090FDF3 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 826BB0AE2976D63A0090FDF3 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 82D74B752975309D0023C20C /* Project object */;
 }

@@ -36,6 +36,20 @@ class KDAssetsTableViewControllerViewModel {
         delegate?.didAppendAssets(by: self)
     }
 
+    var numberOfAssets: Int {
+        get {
+            return (assets?.count) ?? 0
+        }
+    }
+
+    func asset(at index: Int) -> KDAsset? {
+        if (index >= (assets?.count ?? -1)) {
+            return nil
+        }
+        return assets?[index]
+    }
+
+    // MARK: - Privates6
     private var appCoordinator: KDAppCoordinator
     private var pageIndex: UInt = 0
     private var assets: [KDAsset]?
