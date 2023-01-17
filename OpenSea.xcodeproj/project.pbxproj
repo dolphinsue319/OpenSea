@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		826BB0A129764EE00090FDF3 /* KDAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74BB829753E910023C20C /* KDAPIManager.swift */; };
+		826BB0A3297655790090FDF3 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0A2297655790090FDF3 /* CoordinatorProtocol.swift */; };
+		826BB0A7297655CC0090FDF3 /* KDAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0A6297655CC0090FDF3 /* KDAppCoordinator.swift */; };
 		82D74B812975309D0023C20C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74B802975309D0023C20C /* AppDelegate.swift */; };
 		82D74B832975309D0023C20C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74B822975309D0023C20C /* SceneDelegate.swift */; };
 		82D74B852975309D0023C20C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74B842975309D0023C20C /* ViewController.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		826BB0A2297655790090FDF3 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		826BB0A6297655CC0090FDF3 /* KDAppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAppCoordinator.swift; sourceTree = "<group>"; };
 		82D74B7D2975309D0023C20C /* OpenSea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D74B802975309D0023C20C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82D74B822975309D0023C20C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		826BB0A5297655AC0090FDF3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				82D74BB529753E2D0023C20C /* KDAPIProtocol.swift */,
+				826BB0A2297655790090FDF3 /* CoordinatorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		82D74B742975309D0023C20C = {
 			isa = PBXGroup;
 			children = (
@@ -80,9 +93,10 @@
 		82D74B7F2975309D0023C20C /* OpenSea */ = {
 			isa = PBXGroup;
 			children = (
-				82D74BB529753E2D0023C20C /* KDAPIProtocol.swift */,
+				826BB0A5297655AC0090FDF3 /* Protocols */,
 				82D74BBA29754DCB0023C20C /* KDError.swift */,
 				82D74BB829753E910023C20C /* KDAPIManager.swift */,
+				826BB0A6297655CC0090FDF3 /* KDAppCoordinator.swift */,
 				82D74BB0297535FC0023C20C /* DataModels */,
 				82D74B802975309D0023C20C /* AppDelegate.swift */,
 				82D74B822975309D0023C20C /* SceneDelegate.swift */,
@@ -213,7 +227,9 @@
 			files = (
 				82D74BB629753E2D0023C20C /* KDAPIProtocol.swift in Sources */,
 				82D74BBB29754DCB0023C20C /* KDError.swift in Sources */,
+				826BB0A3297655790090FDF3 /* CoordinatorProtocol.swift in Sources */,
 				82D74BB929753E910023C20C /* KDAPIManager.swift in Sources */,
+				826BB0A7297655CC0090FDF3 /* KDAppCoordinator.swift in Sources */,
 				82D74B852975309D0023C20C /* ViewController.swift in Sources */,
 				82D74B812975309D0023C20C /* AppDelegate.swift in Sources */,
 				82D74B832975309D0023C20C /* SceneDelegate.swift in Sources */,
