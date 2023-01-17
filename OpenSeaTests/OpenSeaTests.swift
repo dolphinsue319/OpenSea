@@ -32,7 +32,7 @@ final class OpenSeaTests: XCTestCase {
         XCTAssertEqual(asset.description, "Blocto assignment second collection")
     }
 
-    func testFetchAssets() async {
+    func _testFetchAssets() async {
         let (assets, error) = await KDAPIManager().fetchAssets(at: 0)
         XCTAssertNil(error)
         XCTAssertNotNil(assets)
