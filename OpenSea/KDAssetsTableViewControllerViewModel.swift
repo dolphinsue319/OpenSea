@@ -7,12 +7,37 @@
 
 import Foundation
 
+protocol KDAssetsTableViewControllerViewModelDelegate: AnyObject {
+    func didAppendAssets(by viewModel: KDAssetsTableViewControllerViewModel)
+    func fetchAssetsFailed(by viewModel: KDAssetsTableViewControllerViewModel)
+}
 
 class KDAssetsTableViewControllerViewModel {
 
-    var appCoordinator: KDAppCoordinator
+    weak var delegate: KDAssetsTableViewControllerViewModelDelegate?
 
     init(appCoordinator: KDAppCoordinator) {
         self.appCoordinator = appCoordinator
     }
+
+    func fetchAssets() async {
+        if isFetching {
+            return
+        }
+        isFetching = true
+        let (container, error) = await KDAPIManager().fetchAssets(at: pageIndex)
+        isFetching = false
+        guard error == nil, let container = container else {
+            delegate?.fetchAssetsFailed(by: self)
+            return
+        }
+        pageIndex += 1
+        self.assets = container.assets
+        delegate?.didAppendAssets(by: self)
+    }
+
+    private var appCoordinator: KDAppCoordinator
+    private var pageIndex: UInt = 0
+    private var assets: [KDAsset]?
+    private var isFetching: Bool = false
 }
