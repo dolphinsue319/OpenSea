@@ -26,14 +26,24 @@ class KDAssetsTableViewControllerViewModel {
         }
         isFetching = true
         let (container, error) = await KDAPIManager().fetchAssets(at: pageIndex)
-        isFetching = false
-        guard error == nil, let container = container else {
+        guard error == nil, let container = container, let inAssets = container.assets else {
             delegate?.fetchAssetsFailed(by: self)
+            isFetching = false
             return
         }
-        pageIndex += 1
-        self.assets = container.assets
-        delegate?.didAppendAssets(by: self)
+        if inAssets.count == 0 {
+            isFetching = true
+            return
+        }
+        if self.assets == nil {
+            self.assets = [KDAsset]()
+        }
+        self.assets?.append(contentsOf: inAssets)
+        self.delegate?.didAppendAssets(by: self)
+        DispatchQueue.global().asyncAfter(deadline: .now() + 1) { [weak self] in
+            self?.pageIndex += 1
+            self?.isFetching = false
+        }
     }
 
     var numberOfAssets: Int {
@@ -53,5 +63,16 @@ class KDAssetsTableViewControllerViewModel {
     private var appCoordinator: KDAppCoordinator
     private var pageIndex: UInt = 0
     private var assets: [KDAsset]?
-    private var isFetching: Bool = false
+    private let locker = NSLock()
+    private var _isFetching: Bool = false
+    private var isFetching: Bool {
+        get {
+            return _isFetching
+        }
+        set {
+            locker.lock()
+            _isFetching = newValue
+            locker.unlock()
+        }
+    }
 }

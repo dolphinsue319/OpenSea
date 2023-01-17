@@ -90,7 +90,7 @@ extension KDAssetsTableViewController: UITableViewDataSource, UITableViewDelegat
     }
 
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.row == viewModel.numberOfAssets {
+        if indexPath.row == max(viewModel.numberOfAssets - 2, 0) {
             Task {
                 await viewModel.fetchAssets()
             }
