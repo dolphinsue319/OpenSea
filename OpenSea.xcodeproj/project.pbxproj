@@ -14,6 +14,7 @@
 		826BB0AB29766F930090FDF3 /* KDAssetsTableViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0AA29766F930090FDF3 /* KDAssetsTableViewControllerViewModel.swift */; };
 		826BB0AD2976D3A60090FDF3 /* KDAssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0AC2976D3A60090FDF3 /* KDAssetCell.swift */; };
 		826BB0B02976D63A0090FDF3 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 826BB0AF2976D63A0090FDF3 /* SDWebImage */; };
+		826BB0B329777C7D0090FDF3 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 826BB0B229777C7D0090FDF3 /* MBProgressHUD */; };
 		82D74B812975309D0023C20C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74B802975309D0023C20C /* AppDelegate.swift */; };
 		82D74B832975309D0023C20C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74B822975309D0023C20C /* SceneDelegate.swift */; };
 		82D74B8A2975309E0023C20C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D74B892975309E0023C20C /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826BB0B329777C7D0090FDF3 /* MBProgressHUD in Frameworks */,
 				826BB0B02976D63A0090FDF3 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,6 +150,7 @@
 			name = OpenSea;
 			packageProductDependencies = (
 				826BB0AF2976D63A0090FDF3 /* SDWebImage */,
+				826BB0B229777C7D0090FDF3 /* MBProgressHUD */,
 			);
 			productName = OpenSea;
 			productReference = 82D74B7D2975309D0023C20C /* OpenSea.app */;
@@ -200,6 +203,7 @@
 			mainGroup = 82D74B742975309D0023C20C;
 			packageReferences = (
 				826BB0AE2976D63A0090FDF3 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				826BB0B129777C7D0090FDF3 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
 			);
 			productRefGroup = 82D74B7E2975309D0023C20C /* Products */;
 			projectDirPath = "";
@@ -532,6 +536,14 @@
 				version = 5.9.5;
 			};
 		};
+		826BB0B129777C7D0090FDF3 /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -539,6 +551,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 826BB0AE2976D63A0090FDF3 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
+		};
+		826BB0B229777C7D0090FDF3 /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 826BB0B129777C7D0090FDF3 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

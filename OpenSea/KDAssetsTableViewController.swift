@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import SDWebImage
+import MBProgressHUD
 
 
 class KDAssetsTableViewController: UIViewController {
@@ -53,17 +54,35 @@ class KDAssetsTableViewController: UIViewController {
         t.register(KDAssetCell.self, forCellReuseIdentifier: KDAssetCell.identifier)
         return t
     }()
+
+    private let hud = MBProgressHUD()
 }
 
 extension KDAssetsTableViewController: KDAssetsTableViewControllerViewModelDelegate {
 
+    func willFetchAssets(by viewModel: KDAssetsTableViewControllerViewModel) {
+        DispatchQueue.main.async {
+            MBProgressHUD.showAdded(to: self.view, animated: true)
+        }
+    }
+
+
     func didAppendAssets(by viewModel: KDAssetsTableViewControllerViewModel) {
         DispatchQueue.main.async {
+            MBProgressHUD.hide(for: self.view, animated: true)
             self.tableView.reloadData()
         }
     }
 
-    func fetchAssetsFailed(by viewModel: KDAssetsTableViewControllerViewModel) {
+    func fetchAssetsFailed(by viewModel: KDAssetsTableViewControllerViewModel, error: KDError) {
+        DispatchQueue.main.async {
+            MBProgressHUD.hide(for: self.view, animated: true)
+
+            let alert = UIAlertController(title: nil, message: error.reason, preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .cancel)
+            alert.addAction(action)
+            self.present(alert, animated: true)
+        }
 
     }
 

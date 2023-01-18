@@ -8,8 +8,9 @@
 import Foundation
 
 protocol KDAssetsTableViewControllerViewModelDelegate: AnyObject {
+    func willFetchAssets(by viewModel: KDAssetsTableViewControllerViewModel)
     func didAppendAssets(by viewModel: KDAssetsTableViewControllerViewModel)
-    func fetchAssetsFailed(by viewModel: KDAssetsTableViewControllerViewModel)
+    func fetchAssetsFailed(by viewModel: KDAssetsTableViewControllerViewModel, error: KDError)
 }
 
 class KDAssetsTableViewControllerViewModel {
@@ -27,7 +28,7 @@ class KDAssetsTableViewControllerViewModel {
         isFetching = true
         let (container, error) = await KDAPIManager().fetchAssets(at: pageIndex)
         guard error == nil, let container = container, let inAssets = container.assets else {
-            delegate?.fetchAssetsFailed(by: self)
+            delegate?.fetchAssetsFailed(by: self, error: error!)
             isFetching = false
             return
         }
