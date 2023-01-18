@@ -39,6 +39,7 @@ class KDAssetsTableViewController: UIViewController {
         if viewModel.numberOfAssets == 0 {
             Task {
                 await viewModel.fetchAssets()
+                await viewModel.fetchETHBalance()
             }
         }
     }
@@ -59,6 +60,12 @@ class KDAssetsTableViewController: UIViewController {
 }
 
 extension KDAssetsTableViewController: KDAssetsTableViewControllerViewModelDelegate {
+
+    func didFetchETHBalance(by viewModel: KDAssetsTableViewControllerViewModel, balance: Double) {
+        DispatchQueue.main.async {
+            self.title = "ETH Balance: \(balance)"
+        }
+    }
 
     func willFetchAssets(by viewModel: KDAssetsTableViewControllerViewModel) {
         DispatchQueue.main.async {

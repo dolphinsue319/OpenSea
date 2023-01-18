@@ -11,6 +11,8 @@ protocol KDAssetsTableViewControllerViewModelDelegate: AnyObject {
     func willFetchAssets(by viewModel: KDAssetsTableViewControllerViewModel)
     func didAppendAssets(by viewModel: KDAssetsTableViewControllerViewModel)
     func fetchAssetsFailed(by viewModel: KDAssetsTableViewControllerViewModel, error: KDError)
+
+    func didFetchETHBalance(by viewModel: KDAssetsTableViewControllerViewModel, balance: Double)
 }
 
 class KDAssetsTableViewControllerViewModel {
@@ -19,6 +21,13 @@ class KDAssetsTableViewControllerViewModel {
 
     init(appCoordinator: KDAppCoordinator) {
         self.appCoordinator = appCoordinator
+    }
+
+    func fetchETHBalance() async {
+        let (balance, _) = await KDAPIManager().fetchETHBalance()
+        if let balance = balance {
+            delegate?.didFetchETHBalance(by: self, balance: balance)
+        }
     }
 
     func fetchAssets() async {
