@@ -96,7 +96,7 @@ extension KDAssetsTableViewController: UITableViewDataSource, UITableViewDelegat
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 40
+        return 60
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -114,6 +114,14 @@ extension KDAssetsTableViewController: UITableViewDataSource, UITableViewDelegat
                 await viewModel.fetchAssets()
             }
         }
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        guard let asset = viewModel.asset(at: indexPath.row), let id = asset.id else {
+            return
+        }
+        viewModel.goToAssetDetail(assetID: id)
     }
 
 }

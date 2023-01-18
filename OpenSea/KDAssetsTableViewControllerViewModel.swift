@@ -60,7 +60,16 @@ class KDAssetsTableViewControllerViewModel {
         return assets?[index]
     }
 
-    // MARK: - Privates6
+    func goToAssetDetail(assetID id: Int) {
+        guard let asset = assets?.first(where: { a in
+            return a.id == id
+        }) else {
+            return
+        }
+        appCoordinator.goToAssetDetailPage(collectionName: asset.collectionName, imageURLString: asset.imageURLString, assetName: asset.name, description: asset.description, permalink: asset.permalink)
+    }
+
+    // MARK: - Privates
     private var appCoordinator: KDAppCoordinator
     private var pageIndex: UInt = 0
     private var assets: [KDAsset]?
