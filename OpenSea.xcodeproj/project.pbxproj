@@ -19,6 +19,8 @@
 		826BB0B6297781590090FDF3 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0B4297781590090FDF3 /* ArrayExtension.swift */; };
 		826BB0B8297789EC0090FDF3 /* KDAssetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0B7297789EC0090FDF3 /* KDAssetDetailViewController.swift */; };
 		826BB0BA297799550090FDF3 /* KDAssetDetailViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0B9297799550090FDF3 /* KDAssetDetailViewControllerViewModel.swift */; };
+		826BB0BE2977A9C10090FDF3 /* KDETHBalanceContainerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0BD2977A9C10090FDF3 /* KDETHBalanceContainerModel.swift */; };
+		826BB0BF2977A9C10090FDF3 /* KDETHBalanceContainerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0BD2977A9C10090FDF3 /* KDETHBalanceContainerModel.swift */; };
 		82D74B812975309D0023C20C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74B802975309D0023C20C /* AppDelegate.swift */; };
 		82D74B8A2975309E0023C20C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D74B892975309E0023C20C /* Assets.xcassets */; };
 		82D74B8D2975309E0023C20C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82D74B8B2975309E0023C20C /* LaunchScreen.storyboard */; };
@@ -39,6 +41,7 @@
 		826BB0B4297781590090FDF3 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		826BB0B7297789EC0090FDF3 /* KDAssetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAssetDetailViewController.swift; sourceTree = "<group>"; };
 		826BB0B9297799550090FDF3 /* KDAssetDetailViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAssetDetailViewControllerViewModel.swift; sourceTree = "<group>"; };
+		826BB0BD2977A9C10090FDF3 /* KDETHBalanceContainerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDETHBalanceContainerModel.swift; sourceTree = "<group>"; };
 		82D74B7D2975309D0023C20C /* OpenSea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D74B802975309D0023C20C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82D74B892975309E0023C20C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -147,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				82D74BB12975362B0023C20C /* KDAssetsList.swift */,
+				826BB0BD2977A9C10090FDF3 /* KDETHBalanceContainerModel.swift */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -268,6 +272,7 @@
 				826BB0AB29766F930090FDF3 /* KDAssetsTableViewControllerViewModel.swift in Sources */,
 				826BB0A7297655CC0090FDF3 /* KDAppCoordinator.swift in Sources */,
 				82D74B812975309D0023C20C /* AppDelegate.swift in Sources */,
+				826BB0BE2977A9C10090FDF3 /* KDETHBalanceContainerModel.swift in Sources */,
 				82D74BB22975362B0023C20C /* KDAssetsList.swift in Sources */,
 				826BB0A929766F860090FDF3 /* KDAssetsTableViewController.swift in Sources */,
 			);
@@ -277,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826BB0BF2977A9C10090FDF3 /* KDETHBalanceContainerModel.swift in Sources */,
 				82D74BBC29754DE10023C20C /* KDError.swift in Sources */,
 				82D74B982975309E0023C20C /* OpenSeaTests.swift in Sources */,
 				826BB0B6297781590090FDF3 /* ArrayExtension.swift in Sources */,
