@@ -15,6 +15,8 @@
 		826BB0AD2976D3A60090FDF3 /* KDAssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0AC2976D3A60090FDF3 /* KDAssetCell.swift */; };
 		826BB0B02976D63A0090FDF3 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 826BB0AF2976D63A0090FDF3 /* SDWebImage */; };
 		826BB0B329777C7D0090FDF3 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 826BB0B229777C7D0090FDF3 /* MBProgressHUD */; };
+		826BB0B5297781590090FDF3 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0B4297781590090FDF3 /* ArrayExtension.swift */; };
+		826BB0B6297781590090FDF3 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0B4297781590090FDF3 /* ArrayExtension.swift */; };
 		82D74B812975309D0023C20C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74B802975309D0023C20C /* AppDelegate.swift */; };
 		82D74B832975309D0023C20C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74B822975309D0023C20C /* SceneDelegate.swift */; };
 		82D74B8A2975309E0023C20C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D74B892975309E0023C20C /* Assets.xcassets */; };
@@ -35,6 +37,7 @@
 		826BB0A829766F860090FDF3 /* KDAssetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAssetsTableViewController.swift; sourceTree = "<group>"; };
 		826BB0AA29766F930090FDF3 /* KDAssetsTableViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAssetsTableViewControllerViewModel.swift; sourceTree = "<group>"; };
 		826BB0AC2976D3A60090FDF3 /* KDAssetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAssetCell.swift; sourceTree = "<group>"; };
+		826BB0B4297781590090FDF3 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		82D74B7D2975309D0023C20C /* OpenSea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D74B802975309D0023C20C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82D74B822975309D0023C20C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +106,7 @@
 				82D74BBA29754DCB0023C20C /* KDError.swift */,
 				82D74BB829753E910023C20C /* KDAPIManager.swift */,
 				826BB0A6297655CC0090FDF3 /* KDAppCoordinator.swift */,
+				826BB0B4297781590090FDF3 /* ArrayExtension.swift */,
 				82D74BB0297535FC0023C20C /* DataModels */,
 				82D74B802975309D0023C20C /* AppDelegate.swift */,
 				826BB0A829766F860090FDF3 /* KDAssetsTableViewController.swift */,
@@ -242,6 +246,7 @@
 				826BB0AD2976D3A60090FDF3 /* KDAssetCell.swift in Sources */,
 				82D74BB629753E2D0023C20C /* KDAPIProtocol.swift in Sources */,
 				82D74BBB29754DCB0023C20C /* KDError.swift in Sources */,
+				826BB0B5297781590090FDF3 /* ArrayExtension.swift in Sources */,
 				826BB0A3297655790090FDF3 /* CoordinatorProtocol.swift in Sources */,
 				82D74BB929753E910023C20C /* KDAPIManager.swift in Sources */,
 				826BB0AB29766F930090FDF3 /* KDAssetsTableViewControllerViewModel.swift in Sources */,
@@ -260,6 +265,7 @@
 				82D74BBC29754DE10023C20C /* KDError.swift in Sources */,
 				82D74BBD29754DE60023C20C /* KDAPIProtocol.swift in Sources */,
 				82D74B982975309E0023C20C /* OpenSeaTests.swift in Sources */,
+				826BB0B6297781590090FDF3 /* ArrayExtension.swift in Sources */,
 				826BB0A129764EE00090FDF3 /* KDAPIManager.swift in Sources */,
 				82D74BB32975362B0023C20C /* KDAssetsList.swift in Sources */,
 			);

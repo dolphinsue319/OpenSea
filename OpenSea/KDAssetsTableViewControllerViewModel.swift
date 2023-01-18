@@ -39,10 +39,10 @@ class KDAssetsTableViewControllerViewModel {
         if self.assets == nil {
             self.assets = [KDAsset]()
         }
-        self.assets?.append(contentsOf: inAssets)
+        self.assets?.appendIfNotExist(newAssets: inAssets)
         self.delegate?.didAppendAssets(by: self)
         DispatchQueue.global().asyncAfter(deadline: .now() + 1) { [weak self] in
-            self?.pageIndex += 1
+            self?.pageIndex += UInt(inAssets.count)
             self?.isFetching = false
         }
     }
