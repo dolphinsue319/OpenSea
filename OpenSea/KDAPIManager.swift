@@ -7,7 +7,7 @@
 
 import Foundation
 
-class KDAPIManager: KDAPIProtocol {
+class KDAPIManager {
 
     func fetchAssets(at offset: UInt) async -> (KDAssetsContainer?, KDError?) {
         let urlString = "https://testnets-api.opensea.io/api/v1/assets?owner=0x85fD692D2a075908079261F5E351e7fE0267dB02&offset=\(offset)&limit=20"

@@ -26,6 +26,7 @@ class KDAssetsTableViewControllerViewModel {
             return
         }
         isFetching = true
+        delegate?.willFetchAssets(by: self)
         let (container, error) = await KDAPIManager().fetchAssets(at: pageIndex)
         guard error == nil, let container = container, let inAssets = container.assets else {
             delegate?.fetchAssetsFailed(by: self, error: error!)

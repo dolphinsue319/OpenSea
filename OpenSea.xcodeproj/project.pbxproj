@@ -25,11 +25,9 @@
 		82D74B982975309E0023C20C /* OpenSeaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74B972975309E0023C20C /* OpenSeaTests.swift */; };
 		82D74BB22975362B0023C20C /* KDAssetsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74BB12975362B0023C20C /* KDAssetsList.swift */; };
 		82D74BB32975362B0023C20C /* KDAssetsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74BB12975362B0023C20C /* KDAssetsList.swift */; };
-		82D74BB629753E2D0023C20C /* KDAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74BB529753E2D0023C20C /* KDAPIProtocol.swift */; };
 		82D74BB929753E910023C20C /* KDAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74BB829753E910023C20C /* KDAPIManager.swift */; };
 		82D74BBB29754DCB0023C20C /* KDError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74BBA29754DCB0023C20C /* KDError.swift */; };
 		82D74BBC29754DE10023C20C /* KDError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74BBA29754DCB0023C20C /* KDError.swift */; };
-		82D74BBD29754DE60023C20C /* KDAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74BB529753E2D0023C20C /* KDAPIProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +47,6 @@
 		82D74B932975309E0023C20C /* OpenSeaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenSeaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D74B972975309E0023C20C /* OpenSeaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSeaTests.swift; sourceTree = "<group>"; };
 		82D74BB12975362B0023C20C /* KDAssetsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAssetsList.swift; sourceTree = "<group>"; };
-		82D74BB529753E2D0023C20C /* KDAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAPIProtocol.swift; sourceTree = "<group>"; };
 		82D74BB829753E910023C20C /* KDAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAPIManager.swift; sourceTree = "<group>"; };
 		82D74BBA29754DCB0023C20C /* KDError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,7 +74,6 @@
 		826BB0A5297655AC0090FDF3 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				82D74BB529753E2D0023C20C /* KDAPIProtocol.swift */,
 				826BB0A2297655790090FDF3 /* CoordinatorProtocol.swift */,
 			);
 			path = Protocols;
@@ -247,7 +243,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				826BB0AD2976D3A60090FDF3 /* KDAssetCell.swift in Sources */,
-				82D74BB629753E2D0023C20C /* KDAPIProtocol.swift in Sources */,
 				82D74BBB29754DCB0023C20C /* KDError.swift in Sources */,
 				826BB0B5297781590090FDF3 /* ArrayExtension.swift in Sources */,
 				826BB0A3297655790090FDF3 /* CoordinatorProtocol.swift in Sources */,
@@ -267,7 +262,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				82D74BBC29754DE10023C20C /* KDError.swift in Sources */,
-				82D74BBD29754DE60023C20C /* KDAPIProtocol.swift in Sources */,
 				82D74B982975309E0023C20C /* OpenSeaTests.swift in Sources */,
 				826BB0B6297781590090FDF3 /* ArrayExtension.swift in Sources */,
 				826BB0A129764EE00090FDF3 /* KDAPIManager.swift in Sources */,
