@@ -41,7 +41,7 @@ final class OpenSeaTests: XCTestCase {
         let data = assetsMockString.data(using: .utf8)!
         let container = try! JSONDecoder().decode(KDAssetsContainer.self, from: data)
         var assets1 = Array(container.assets![0...5])
-        let assets2 = Array(container.assets![5...7])
+        let assets2 = Array(container.assets![0...7])
         assets1.appendIfNotExist(newAssets: assets2)
         XCTAssertEqual(assets1.count, 8)
     }
