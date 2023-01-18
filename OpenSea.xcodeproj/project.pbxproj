@@ -81,6 +81,29 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		826BB0BB29779BA20090FDF3 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				82D74BBA29754DCB0023C20C /* KDError.swift */,
+				82D74BB829753E910023C20C /* KDAPIManager.swift */,
+				826BB0A6297655CC0090FDF3 /* KDAppCoordinator.swift */,
+				826BB0B4297781590090FDF3 /* ArrayExtension.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		826BB0BC29779BB90090FDF3 /* UIs */ = {
+			isa = PBXGroup;
+			children = (
+				826BB0A829766F860090FDF3 /* KDAssetsTableViewController.swift */,
+				826BB0AA29766F930090FDF3 /* KDAssetsTableViewControllerViewModel.swift */,
+				826BB0AC2976D3A60090FDF3 /* KDAssetCell.swift */,
+				826BB0B7297789EC0090FDF3 /* KDAssetDetailViewController.swift */,
+				826BB0B9297799550090FDF3 /* KDAssetDetailViewControllerViewModel.swift */,
+			);
+			path = UIs;
+			sourceTree = "<group>";
+		};
 		82D74B742975309D0023C20C = {
 			isa = PBXGroup;
 			children = (
@@ -103,18 +126,11 @@
 			isa = PBXGroup;
 			children = (
 				826BB0A5297655AC0090FDF3 /* Protocols */,
-				82D74BBA29754DCB0023C20C /* KDError.swift */,
-				82D74BB829753E910023C20C /* KDAPIManager.swift */,
-				826BB0A6297655CC0090FDF3 /* KDAppCoordinator.swift */,
-				826BB0B4297781590090FDF3 /* ArrayExtension.swift */,
+				826BB0BB29779BA20090FDF3 /* Tools */,
 				82D74BB0297535FC0023C20C /* DataModels */,
-				82D74B802975309D0023C20C /* AppDelegate.swift */,
-				826BB0A829766F860090FDF3 /* KDAssetsTableViewController.swift */,
-				826BB0AA29766F930090FDF3 /* KDAssetsTableViewControllerViewModel.swift */,
-				826BB0AC2976D3A60090FDF3 /* KDAssetCell.swift */,
-				826BB0B7297789EC0090FDF3 /* KDAssetDetailViewController.swift */,
-				826BB0B9297799550090FDF3 /* KDAssetDetailViewControllerViewModel.swift */,
+				826BB0BC29779BB90090FDF3 /* UIs */,
 				82D74B822975309D0023C20C /* SceneDelegate.swift */,
+				82D74B802975309D0023C20C /* AppDelegate.swift */,
 				82D74B892975309E0023C20C /* Assets.xcassets */,
 				82D74B8B2975309E0023C20C /* LaunchScreen.storyboard */,
 				82D74B8E2975309E0023C20C /* Info.plist */,
