@@ -6,7 +6,6 @@
 //
 
 import XCTest
-@testable import OpenSea
 
 final class OpenSeaTests: XCTestCase {
 
@@ -36,6 +35,15 @@ final class OpenSeaTests: XCTestCase {
         let (assets, error) = await KDAPIManager().fetchAssets(at: 0)
         XCTAssertNil(error)
         XCTAssertNotNil(assets)
+    }
+
+    func testAppendIfNotExist() {
+        let data = assetsMockString.data(using: .utf8)!
+        let container = try! JSONDecoder().decode(KDAssetsContainer.self, from: data)
+        var assets1 = Array(container.assets![0...5])
+        let assets2 = Array(container.assets![5...7])
+        assets1.appendIfNotExist(newAssets: assets2)
+        XCTAssertEqual(assets1.count, 8)
     }
 
     let assetsMockString = #"""
