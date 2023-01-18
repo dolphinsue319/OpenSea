@@ -21,6 +21,7 @@
 		826BB0BA297799550090FDF3 /* KDAssetDetailViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0B9297799550090FDF3 /* KDAssetDetailViewControllerViewModel.swift */; };
 		826BB0BE2977A9C10090FDF3 /* KDETHBalanceContainerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0BD2977A9C10090FDF3 /* KDETHBalanceContainerModel.swift */; };
 		826BB0BF2977A9C10090FDF3 /* KDETHBalanceContainerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0BD2977A9C10090FDF3 /* KDETHBalanceContainerModel.swift */; };
+		826BB0C22977B1A00090FDF3 /* SDWebImageSVGCoder in Frameworks */ = {isa = PBXBuildFile; productRef = 826BB0C12977B1A00090FDF3 /* SDWebImageSVGCoder */; };
 		82D74B812975309D0023C20C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74B802975309D0023C20C /* AppDelegate.swift */; };
 		82D74B8A2975309E0023C20C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D74B892975309E0023C20C /* Assets.xcassets */; };
 		82D74B8D2975309E0023C20C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82D74B8B2975309E0023C20C /* LaunchScreen.storyboard */; };
@@ -59,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826BB0C22977B1A00090FDF3 /* SDWebImageSVGCoder in Frameworks */,
 				826BB0B329777C7D0090FDF3 /* MBProgressHUD in Frameworks */,
 				826BB0B02976D63A0090FDF3 /* SDWebImage in Frameworks */,
 			);
@@ -174,6 +176,7 @@
 			packageProductDependencies = (
 				826BB0AF2976D63A0090FDF3 /* SDWebImage */,
 				826BB0B229777C7D0090FDF3 /* MBProgressHUD */,
+				826BB0C12977B1A00090FDF3 /* SDWebImageSVGCoder */,
 			);
 			productName = OpenSea;
 			productReference = 82D74B7D2975309D0023C20C /* OpenSea.app */;
@@ -227,6 +230,7 @@
 			packageReferences = (
 				826BB0AE2976D63A0090FDF3 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				826BB0B129777C7D0090FDF3 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+				826BB0C02977B1A00090FDF3 /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */,
 			);
 			productRefGroup = 82D74B7E2975309D0023C20C /* Products */;
 			projectDirPath = "";
@@ -570,6 +574,14 @@
 				version = 1.2.0;
 			};
 		};
+		826BB0C02977B1A00090FDF3 /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSVGCoder.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.6.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -582,6 +594,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 826BB0B129777C7D0090FDF3 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
 			productName = MBProgressHUD;
+		};
+		826BB0C12977B1A00090FDF3 /* SDWebImageSVGCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 826BB0C02977B1A00090FDF3 /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */;
+			productName = SDWebImageSVGCoder;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

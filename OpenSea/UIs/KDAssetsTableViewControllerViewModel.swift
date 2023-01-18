@@ -44,6 +44,7 @@ class KDAssetsTableViewControllerViewModel {
         }
         if inAssets.count == 0 {
             isFetching = true
+            self.delegate?.didAppendAssets(by: self)
             return
         }
         if self.assets == nil {

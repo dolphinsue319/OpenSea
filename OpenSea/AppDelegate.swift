@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import SDWebImage
+import SDWebImageSVGCoder
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         appCoordinator?.start()
         window?.rootViewController = navigationCon
         window?.makeKeyAndVisible()
+
+        SDImageCodersManager.shared.addCoder(SDImageSVGCoder.shared)
+
         return true
     }
 

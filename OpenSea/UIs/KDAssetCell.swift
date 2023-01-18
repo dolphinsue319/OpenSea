@@ -46,6 +46,7 @@ class KDAssetCell: UITableViewCell {
 
     private lazy var thumbnailImageView: UIImageView = {
         let i = UIImageView()
+        i.contentMode = .scaleAspectFit
         i.translatesAutoresizingMaskIntoConstraints = false
         return i
     }()
