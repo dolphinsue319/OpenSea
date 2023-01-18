@@ -36,15 +36,16 @@ class KDAssetDetailViewController: UIViewController {
         linkButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 8).isActive = true
         linkButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -8).isActive = true
         linkButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
+
+        self.title = viewModel?.collectionName
+        self.imageView.sd_setImage(with: URL(string: viewModel?.imageURLString ?? ""))
+        self.nameLabel.text = viewModel?.assetName
+        self.descriptionLabel.text = viewModel?.description
     }
 
-    init(collectionName: String?, imageURLString: String?, assetName: String?, description: String?, permalink: String?) {
-        self.permalinkString = permalink
+    init(viewModel: KDAssetDetailViewControllerViewModel) {
+        self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
-        self.imageView.sd_setImage(with: URL(string: imageURLString ?? ""))
-        self.nameLabel.text = assetName
-        self.descriptionLabel.text = description
-        self.title = collectionName
     }
 
     required init?(coder: NSCoder) {
@@ -52,9 +53,8 @@ class KDAssetDetailViewController: UIViewController {
     }
 
     // MARK: Privates
-//collectionName: String?, imageURLString: String?, assetName: String?, description: String?, permalink: String?
-    private var permalinkString: String?
 
+    private var viewModel: KDAssetDetailViewControllerViewModel?
     private lazy var imageView: UIImageView = {
         let v = UIImageView()
         v.contentMode = .scaleAspectFit
@@ -90,7 +90,7 @@ class KDAssetDetailViewController: UIViewController {
     }()
 
     @objc private func linkButtonMethod(_ sender: UIButton) {
-        guard let linkString = permalinkString, let url = URL(string: linkString) else {
+        guard let linkString = viewModel?.permalinkString, let url = URL(string: linkString) else {
             return
         }
         if UIApplication.shared.canOpenURL(url) {

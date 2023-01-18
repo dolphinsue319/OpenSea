@@ -18,6 +18,7 @@
 		826BB0B5297781590090FDF3 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0B4297781590090FDF3 /* ArrayExtension.swift */; };
 		826BB0B6297781590090FDF3 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0B4297781590090FDF3 /* ArrayExtension.swift */; };
 		826BB0B8297789EC0090FDF3 /* KDAssetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0B7297789EC0090FDF3 /* KDAssetDetailViewController.swift */; };
+		826BB0BA297799550090FDF3 /* KDAssetDetailViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BB0B9297799550090FDF3 /* KDAssetDetailViewControllerViewModel.swift */; };
 		82D74B812975309D0023C20C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74B802975309D0023C20C /* AppDelegate.swift */; };
 		82D74B832975309D0023C20C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D74B822975309D0023C20C /* SceneDelegate.swift */; };
 		82D74B8A2975309E0023C20C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D74B892975309E0023C20C /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		826BB0AC2976D3A60090FDF3 /* KDAssetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAssetCell.swift; sourceTree = "<group>"; };
 		826BB0B4297781590090FDF3 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		826BB0B7297789EC0090FDF3 /* KDAssetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAssetDetailViewController.swift; sourceTree = "<group>"; };
+		826BB0B9297799550090FDF3 /* KDAssetDetailViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAssetDetailViewControllerViewModel.swift; sourceTree = "<group>"; };
 		82D74B7D2975309D0023C20C /* OpenSea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D74B802975309D0023C20C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82D74B822975309D0023C20C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				826BB0AA29766F930090FDF3 /* KDAssetsTableViewControllerViewModel.swift */,
 				826BB0AC2976D3A60090FDF3 /* KDAssetCell.swift */,
 				826BB0B7297789EC0090FDF3 /* KDAssetDetailViewController.swift */,
+				826BB0B9297799550090FDF3 /* KDAssetDetailViewControllerViewModel.swift */,
 				82D74B822975309D0023C20C /* SceneDelegate.swift */,
 				82D74B892975309E0023C20C /* Assets.xcassets */,
 				82D74B8B2975309E0023C20C /* LaunchScreen.storyboard */,
@@ -245,6 +248,7 @@
 				826BB0AD2976D3A60090FDF3 /* KDAssetCell.swift in Sources */,
 				82D74BBB29754DCB0023C20C /* KDError.swift in Sources */,
 				826BB0B5297781590090FDF3 /* ArrayExtension.swift in Sources */,
+				826BB0BA297799550090FDF3 /* KDAssetDetailViewControllerViewModel.swift in Sources */,
 				826BB0A3297655790090FDF3 /* CoordinatorProtocol.swift in Sources */,
 				82D74BB929753E910023C20C /* KDAPIManager.swift in Sources */,
 				826BB0B8297789EC0090FDF3 /* KDAssetDetailViewController.swift in Sources */,

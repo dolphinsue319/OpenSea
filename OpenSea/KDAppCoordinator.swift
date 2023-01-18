@@ -25,7 +25,8 @@ class KDAppCoordinator: Coordinator {
     }
 
     func goToAssetDetailPage(collectionName: String?, imageURLString: String?, assetName: String?, description: String?, permalink: String?) {
-        let vc = KDAssetDetailViewController(collectionName: collectionName, imageURLString: imageURLString, assetName: assetName, description: description, permalink: permalink)
+        let vm = KDAssetDetailViewControllerViewModel(collectionName: collectionName, imageURLString: imageURLString, assetName: assetName, description: description, permalink: permalink)
+        let vc = KDAssetDetailViewController(viewModel: vm)
         navigationController.pushViewController(vc, animated: true)
     }
 }
